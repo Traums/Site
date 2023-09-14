@@ -22,8 +22,6 @@ public class ApiController {
     @PostMapping("/feedback")
     public String getFeedback(@RequestBody String request){
         JSONObject json = new JSONObject(request);
-//        System.out.println(json.get("Mail"));
-//        System.out.println(json.get("Text"))
         String Message = "";
         try
         {
